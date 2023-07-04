@@ -107,6 +107,9 @@ impl Table {
 
 fn main() {
     let table = Table::new("src/test.rat");
-
+    println!("{:?}", table.headers);
+    for j in table.columns {
+        println!("{:?}", j.content);
+    }
 
 }
